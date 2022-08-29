@@ -66,7 +66,7 @@ const NavBar = () => {
     return (
         <div className={styles.container}>
             <div className={styles.wrapper}>
-                <a className={styles.logoLink} href="/">
+                <Link className={styles.logoLink} href="/">
                     <div className={styles.logoWrapper}>
                        <Image 
                         src="/icons/netflix.svg" 
@@ -75,7 +75,7 @@ const NavBar = () => {
                         height="34px"
                     /> 
                     </div>
-                </a>
+                </Link>
             <ul className={styles.navItems}>
                 <li onClick={handleOnClickHome} className={styles.navItem}>Home</li>
                 <li onClick={handleOnClickMyList} className={styles.navItem2}>My List</li>
