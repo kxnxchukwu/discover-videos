@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useRouter } from 'next/router';
 import styles from '../styles/Login.module.css'
@@ -76,7 +77,7 @@ const Login = () => {
             </Head>
             <header className={styles.header}>
             <div className={styles.headerWrapper}>
-                <a className={styles.logoLink} href="/">
+                <Link className={styles.logoLink} href="/">
                     <div className={styles.logoWrapper}>
                         <Image
                             src="/icons/netflix.svg"
@@ -85,7 +86,7 @@ const Login = () => {
                             height="34px"
                         />
                     </div>
-                </a>
+                </Link>
             </div>
             </header>
             <main className={styles.main}>

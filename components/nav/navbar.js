@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import styles from "./navbar.module.css";
 import { useRouter } from "next/router";
 import Image from "next/image";
+import Link from "next/link";
 import { magic } from "../../lib/magic-client";
 
 const NavBar = () => {
@@ -95,7 +96,7 @@ const NavBar = () => {
                     { showDropdown && (
                         <div className={styles.navDropdown}>
                         <div>
-                            <a className={styles.linkName} onClick={handleSignout}>Sign Out</a>
+                            <Link className={styles.linkName} onClick={handleSignout}>Sign Out</Link>
                             <div className={styles.lineWrapper}></div>
                         </div>
                     </div>
